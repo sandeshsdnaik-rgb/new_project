@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Builder | WHATIF</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/studio.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="container site-shell">
+      <header class="topbar">
+        <div class="logo">WHATIF</div>
+        <nav class="nav">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/decision-studio">Studio</a>
+          <a href="/model-builder">Builder</a>
+          <a href="/simulation-lab">Simulation</a>
+        </nav>
+      </header>
+
+      <main class="studio-layout">
+        <section class="form-panel">
+          <h2>Model Builder</h2>
+          <form id="model-form">
+            <div class="field">
+              <label for="selling-price">Selling price</label>
+              <input id="selling-price" type="number" value="120" />
+            </div>
+            <div class="field">
+              <label for="daily-customers">Daily customers</label>
+              <input id="daily-customers" type="number" value="50" />
+            </div>
+            <div class="field">
+              <label for="monthly-rent">Monthly rent</label>
+              <input id="monthly-rent" type="number" value="20000" />
+            </div>
+            <button class="btn primary" type="submit">Validate model</button>
+          </form>
+        </section>
+
+        <aside class="result-panel">
+          <h3>Preview</h3>
+          <div id="model-preview" class="result-box"></div>
+        </aside>
+      </main>
+    </div>
+    <script src="/js/config.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/model-builder.js"></script>
+  </body>
+</html>

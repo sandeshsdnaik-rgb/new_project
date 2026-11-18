@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulation Lab | WHATIF</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/simulation.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="container site-shell">
+      <header class="topbar">
+        <div class="logo">WHATIF</div>
+        <nav class="nav">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/simulation-lab">Simulation Lab</a>
+          <a href="/scenario-explorer">Scenarios</a>
+          <a href="/risk-analyzer">Risk</a>
+        </nav>
+      </header>
+
+      <main class="sim-grid">
+        <section class="panel-box">
+          <h2>Simulation Lab</h2>
+          <form id="simulation-form">
+            <div class="field">
+              <label>Sim Type</label>
+              <select>
+                <option>deterministic</option>
+                <option>sensitivity</option>
+                <option>monte_carlo</option>
+              </select>
+            </div>
+            <button class="btn primary" type="submit">Run simulation</button>
+          </form>
+        </section>
+
+        <aside class="panel-box">
+          <h3>Results</h3>
+          <div id="simulation-result" class="metric-grid"></div>
+        </aside>
+      </main>
+    </div>
+    <script src="/js/config.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/simulation.js"></script>
+  </body>
+</html>

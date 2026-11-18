@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decision Studio | WHATIF</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/studio.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="container site-shell">
+      <header class="topbar">
+        <div class="logo">WHATIF</div>
+        <nav class="nav">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/decision-studio">Decision Studio</a>
+          <a href="/model-builder">Model Builder</a>
+          <a href="/simulation-lab">Simulation</a>
+        </nav>
+      </header>
+
+      <main class="studio-layout">
+        <section class="form-panel">
+          <h2>Decision Studio</h2>
+          <form id="decision-form">
+            <div class="field">
+              <label for="decision-input">Describe the decision</label>
+              <textarea id="decision-input" class="large" placeholder="I want to open a small coffee shop with an initial investment of ₹5,00,000."></textarea>
+            </div>
+            <div class="inline-controls">
+              <div class="field">
+                <label>Domain</label>
+                <select>
+                  <option>small_business</option>
+                  <option>startup</option>
+                  <option>consulting</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Decision title</label>
+                <input type="text" value="Coffee shop launch plan" />
+              </div>
+            </div>
+            <div class="chip-list">
+              <span class="chip">Need clarity</span>
+              <span class="chip">Model draft</span>
+              <span class="chip">Save decision</span>
+            </div>
+            <button class="btn primary" type="submit">Understand decision</button>
+          </form>
+        </section>
+
+        <aside class="result-panel">
+          <h3>AI output</h3>
+          <div class="result-box">
+            <pre id="ai-output">Awaiting decision analysis…</pre>
+          </div>
+          <div class="model-preview">
+            <h3>Extracted variables</h3>
+            <div id="variable-list" class="variable-list"></div>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <script src="/js/config.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/decision-studio.js"></script>
+  </body>
+</html>

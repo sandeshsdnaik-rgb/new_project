@@ -1,0 +1,17 @@
+.sim-grid {
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 24px; padding: 28px 0;
+}
+.panel-box {
+  background: rgba(11, 25, 39, 0.9); border: 1px solid var(--border); border-radius: 18px; padding: 20px;
+}
+.metric-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+.metric-card {
+  background: rgba(255,255,255,0.025); border: 1px solid var(--border); border-radius: 14px; padding: 16px;
+}
+.chart-area {
+  min-height: 250px; display: grid; place-items: center; background: rgba(17, 36, 52, 0.9); border-radius: 16px; border: 1px solid var(--border); padding: 12px;
+}
+.chart-area canvas { max-width: 100%; max-height: 220px; }
+.scenario-row {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); background: rgba(255,255,255,0.02);
+}

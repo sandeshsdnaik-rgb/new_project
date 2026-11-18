@@ -1,0 +1,13 @@
+@media (max-width: 960px) {
+  .hero-inner, .studio-layout, .sim-grid, .content-grid { grid-template-columns: 1fr; }
+  .feature-grid, .pricing-grid, .summary-grid, .grid-3 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .container { padding: 0 16px; }
+  .nav { display: none; }
+  .feature-grid, .pricing-grid, .summary-grid, .grid-3, .inline-controls, .metric-grid { grid-template-columns: 1fr; }
+  h1 { font-size: 2.7rem; }
+  .btn { width: 100%; }
+  .hero-actions { flex-direction: column; }
+  .auth-wrap { margin-top: 18px; }
+}
